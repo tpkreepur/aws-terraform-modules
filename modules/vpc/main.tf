@@ -3,10 +3,6 @@
 * Creates a VPC with public and private subnets
 */
 
-terraform {
-  required_version = "value"
-}
-
 resource "aws_vpc" "vpc" {
   cidr_block           = var.vpc_cidr
   enable_dns_hostnames = true
